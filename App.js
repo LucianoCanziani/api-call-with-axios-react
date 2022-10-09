@@ -5,7 +5,7 @@ const App = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios("https://jsonplaceholder.typicode.com/users")
+    axios.get("https://jsonplaceholder.typicode.com/users")
       .then((res) => {
         const { data } = res;
         console.log(data);
